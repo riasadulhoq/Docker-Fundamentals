@@ -36,8 +36,8 @@ docker logs container-id
 docker exec -it container-id ps -aux
 ```
 <pre>
-  docker exec -it container-id sh
-  <b>Then run shell commands</b>
+docker exec -it container-id sh
+<b>Then run shell commands</b>
 </pre>
 
 ```
