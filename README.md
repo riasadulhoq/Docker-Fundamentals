@@ -120,13 +120,13 @@ docker build -t name/image-name .
 
 ### Docker Storage
 
-Writable Layer - File systems layer and writable layer creates an Union file systems. Requires file systems driver. Not persistent, cannot be shared with other containers
+Writable Layer - File systems layer and writable layer creates an Union file systems. Requires file systems driver. **Not persistent**, cannot be shared with other containers
 
-tmpfs - Fast - Host memory. Temporary storage. Not persistent, cannot be shared with other containers. Useful for temp, sensitive data
+tmpfs - Fast - Host memory used. Temporary storage. **Not persistent**, cannot be shared with other containers. Useful for temp, sensitive data
 
-Bind Mounts - Bind mounts map host's folder to container folder, Not persistent, can be shared with other containers. If mapped folder structure does not exist in other host (not managed by Docker), it will not work.
+Bind Mounts - Bind mounts map host's folder to container folder, **Persistent**, can be shared with other containers. If mapped folder structure does not exist in other host (not managed by Docker), it will not work.
 
-Volumes - Storage managed by Docker, Persistent, can be shared with other containers as long as no file locking
+Volumes - Storage managed by Docker, **Persistent**, can be shared with other containers as long as no file locking.
 
 ### Docker Networking
 
