@@ -11,7 +11,7 @@ Physical Server consists of following (bottom to top):
 - Runtime Environment & Dependencies 
 - Application
 
-![Physical Server] (./assets/Physical-Servers.jpg)
+![Physical Server](./assets/Physical-Servers.jpg)
 
 ### What are Containers?
 
