@@ -6,7 +6,7 @@ Docker Fundamentals by Adrian Cantrill
 
 Physical Server consists of following (bottom to top):
 
-- Hardware Resources (CPU, Memory, Storage etc.)
+- Physical/Hardware Resources (CPU, Memory, Storage etc.)
 - OS
 - Runtime Environment & Dependencies 
 - Application
@@ -17,19 +17,18 @@ Issues: If you fail to estimate resources, you either waste or overuse server re
 
 Virtual Servers consists of following (bottom to top):
 
-- Hardware Resources (CPU, Memory, Storage etc.)
-- OS
+- Physical/Hardware Resources (CPU, Memory, Storage etc.) 
 
-Together know as VM Host, you can have multiple
+It is known as VM Host, you can have multiple
 
-- **Hypervisor** (VMware)
+- **Hypervisor** (VMware, Hyper-V, Virtual Box etc) works as a referee, allows VM machines to access Hardware resources
 
-On top of the Hypervisor each application will have it's own OS & Runtime
+On top of the Hypervisor application(s) will have it's own OS & Runtime(s)
 - OS
 - Runtime Environment & Dependencies 
 - Application
 
-Each application is separate.
+Each VM machine is separate, can be of different sizes.
 
 ![Virtual Server](./assets/Virtual-Servers.jpg)
 
