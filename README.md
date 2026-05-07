@@ -23,11 +23,11 @@ Virtual Servers consist of the following (bottom to top):
 
 - ​Virtual Machines (VMs): Each VM is an isolated environment sitting on top of the Hypervisor. A single VM includes:
 
- - ​Operating System (Guest OS): Each VM runs its own independent OS (Windows, Linux, etc.).
+  - ​Operating System (Guest OS): Each VM runs its own independent OS (Windows, Linux, etc.).
 
- - ​Runtime Environment & Dependencies: The specific libraries or engines (like Java, Python, or .NET) required for the apps.
+  - ​Runtime Environment & Dependencies: The specific libraries or engines (like Java, Python, or .NET) required for the apps.
 
- - ​Application(s): The actual software services being hosted.
+  - ​Application(s): The actual software services being hosted.
 
 ![Virtual Server](./assets/Virtual-Servers.jpg)
 
