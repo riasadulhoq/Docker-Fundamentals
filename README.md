@@ -12,7 +12,11 @@ Docker Fundamentals by Adrian Cantrill
 
 ### Docker Architecture
 
+### Interacting with Docker Engine
+
 ### Container & Image Architecture
+
+### Working with existing Docker Images
 
 #### Commands
 
@@ -78,7 +82,7 @@ EXPOSE - Informs Docker what port the container app is running on. Metadata only
 
 
 
-### Build and Run Containerised Application
+### Build and Run Simple Containerised Application
 
 ```
 docker build -t name/image-name .
@@ -115,7 +119,7 @@ docker run -p 1337:1337 image-name
 docker run -p 1338:1337 image-name
 ```
 
-### Environment Variables
+### Extending Container Application using Environment Variables
 
 Using -e input key value pair, keys should be in capital letters
 ```
@@ -276,6 +280,7 @@ It also manages connections between multiple containers internally or outside.
 
 If required to pull container images then it is pulled from docker registry.
 
+### Docker Compose with Application
 
 As long as the file is saved as docker-compose.yaml or compose.yaml (For indentation tab not allowed, space 2 per level must be used within file)
 
@@ -307,6 +312,8 @@ docker compose -f my-app.yaml up -d
 ### Docker Container Registry
 
 Docker Container Registry is a registry just like GitHub but for container images.
+
+### Uploading Application to Docker Hub
 
 Docker Hub is an example of a container registry.
 
