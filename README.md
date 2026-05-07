@@ -15,20 +15,19 @@ Physical Server consists of following (bottom to top):
 
 Issues: If you fail to estimate resources, you either waste or overuse server resource. On the other hand, hosting multiple applications can create one point of failure.
 
-Virtual Servers consists of following (bottom to top):
+Virtual Servers consist of the following (bottom to top):
 
-- Physical/Hardware Resources (CPU, Memory, Storage etc.) 
+- ​Physical/Hardware Resources (VM Host): The physical CPU, Memory, and Storage. A single environment can be supported by multiple hosts.
 
-It is known as VM Host, you can have multiple
+- ​Hypervisor: (e.g., VMware, Hyper-V, VirtualBox). This acts as the referee, managing and distributing the VM Host's physical resources to the virtual layers above.
 
-- **Hypervisor** (VMware, Hyper-V, Virtual Box etc) works as a referee, allows VM machines to access VM Host's resources
+- ​Virtual Machines (VMs): Each VM is an isolated environment sitting on top of the Hypervisor. A single VM includes:
 
-On top of the Hypervisor each VM machine will have OS, Runtime(s) and Application(s)
-- OS
-- Runtime Environment & Dependencies (multiple)
-- Application (multiple)
+  - ​Operating System (Guest OS): Each VM runs its own independent OS (Windows, Linux, etc.).
 
-Each VM machine is separate, can be of different sizes.
+  - ​Runtime Environment & Dependencies: The specific libraries or engines (like Java, Python, or .NET) required for the apps.
+
+  - ​Application(s): The actual software services being hosted.
 
 ![Virtual Server](./assets/Virtual-Servers.jpg)
 
