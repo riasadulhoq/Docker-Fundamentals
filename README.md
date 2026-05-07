@@ -4,6 +4,15 @@ Docker Fundamentals by Adrian Cantrill
 
 ### Physical Servers vs Virtual Servers
 
+Physical Server consists of following (bottom to top):
+
+- Hardware Resources (CPU, Memory, Storage etc.)
+- OS
+- Runtime Environment & Dependencies 
+- Application
+
+![Physical Server] (./assets/Physical-Servers.jpg)
+
 ### What are Containers?
 
 ### Installing Docker on your local machine
