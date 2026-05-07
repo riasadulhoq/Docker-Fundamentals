@@ -21,12 +21,12 @@ Virtual Servers consists of following (bottom to top):
 
 It is known as VM Host, you can have multiple
 
-- **Hypervisor** (VMware, Hyper-V, Virtual Box etc) works as a referee, allows VM machines to access Hardware resources
+- **Hypervisor** (VMware, Hyper-V, Virtual Box etc) works as a referee, allows VM machines to access VM Host's resources
 
-On top of the Hypervisor application(s) will have it's own OS & Runtime(s)
+On top of the Hypervisor each VM machine will have OS, Runtime(s) and Application(s)
 - OS
-- Runtime Environment & Dependencies 
-- Application
+- Runtime Environment & Dependencies (multiple)
+- Application (multiple)
 
 Each VM machine is separate, can be of different sizes.
 
