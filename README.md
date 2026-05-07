@@ -13,6 +13,21 @@ Physical Server consists of following (bottom to top):
 
 ![Physical Server](./assets/Physical-Servers.jpg)
 
+Issues: If you fail to estimate resources, you either waste or overuse server resource. On the other hand, hosting multiple applications can create one point of failure.
+
+Virtual Servers consists of following (bottom to top):
+
+- Hardware Resources (CPU, Memory, Storage etc.)
+- OS
+- **Hypervisor** (VMware)
+On top of the Hypervisor each application will have it's own OS &Runtime
+- OS
+- Runtime Environment & Dependencies 
+- Application
+
+![Virtual Server](./assets/Virtual-Servers.jpg)
+
+
 ### What are Containers?
 
 ### Installing Docker on your local machine
