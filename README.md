@@ -19,11 +19,15 @@ Virtual Servers consists of following (bottom to top):
 
 - Hardware Resources (CPU, Memory, Storage etc.)
 - OS
+Together know as VM Host, you can have multiple
+
 - **Hypervisor** (VMware)
-On top of the Hypervisor each application will have it's own OS &Runtime
+On top of the Hypervisor each application will have it's own OS & Runtime
 - OS
 - Runtime Environment & Dependencies 
 - Application
+
+Each application is separate.
 
 ![Virtual Server](./assets/Virtual-Servers.jpg)
 
