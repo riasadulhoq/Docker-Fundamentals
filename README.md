@@ -57,6 +57,7 @@ docker rmi image-name
 #### Instructions in caps, argument in small letters
 
 FROM - Sets the Base Image from build, e.g. Alpine (Small Linux Distro 5MB)
+
 LABEL - Adds metadata, e.g., Description, Maintainer, to the image
 
 **Following the three instructions creates new layers in the Docker image**
@@ -67,12 +68,15 @@ COPY - Copy files/folders from src (client machine) to the destination (new imag
 
 ADD - Same as COPY but can add from remote URL & do extraction (adding application/web files)
 
+<br>
+CMD - Sets the default executable of a container, e.g. start a web server. Can be overridden by docker run parameters  
 
-CMD - Sets the default executable of a container, e.g. start a web server. Can be overridden by docker run parameters
 
 ENTRYPOINT - As above, but can't be overridden. More for single purpose image
 
 EXPOSE - Informs Docker what port the container app is running on. Metadata only (No network configuration)
+
+
 
 ### Build and Run Containerised Application
 
